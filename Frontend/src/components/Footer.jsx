@@ -129,9 +129,10 @@ export default function Footer() {
             <div className="uber-footer-app-badges">
               {/* Google Play Store Badge */}
               <a
-                href="#download"
+                href="https://drive.google.com/drive/folders/1kHF2igKue5_j_IEn70Wc4cFsKpLUZRfZ?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="uber-app-badge-btn"
-                onClick={(e) => e.preventDefault()}
                 title="Download Workio on Google Play"
               >
                 <svg className="uber-badge-icon" viewBox="0 0 24 24" width="22" height="22">
