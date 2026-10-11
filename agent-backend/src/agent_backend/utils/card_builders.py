@@ -1862,6 +1862,7 @@ def _deterministic_card_builder(state: AgentState, ai_message: Optional[Any] = N
         "community post", "create post", "make a post", "post request", "publish post", "draft post", "new post", "community board"
     ])
     active_agent = metadata.get("agent")
+    is_non_community_agent = active_agent in ["booking_agent", "worker_matching_agent", "support_review_agent"]
     is_delete_turn = any(kw in user_query_lower for kw in [
         "delete", "remove", "trash", "take down", "erase", "cancel post", "drop post"
     ]) or any(kw in lower_content for kw in [
